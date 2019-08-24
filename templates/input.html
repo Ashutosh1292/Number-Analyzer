@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Text Analyzer</title>
+  </head>
+  <body>
+  <!-- Image and text -->
+  {% load static %}
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+   <img src="{% static 'number.jpg' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+    Number Analyze
+  </a>
+</nav>
+<div class="container">
+<form action="output" method="get">
+
+  <div  class="form-group">
+    <label for="exampleFormControlTextarea1">Number Area</label>
+    <textarea name="number" class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+  </div>
+<div  class="custom-control custom-switch">
+  <input name="even_odd" type="checkbox" class="custom-control-input" id="customSwitch1">
+  <label class="custom-control-label" for="customSwitch1">Cheak your number is even or odd</label>
+</div>
+<div  class="custom-control custom-switch">
+  <input name="sum" type="checkbox" class="custom-control-input" id="customSwitch2">
+  <label class="custom-control-label" for="customSwitch2">Cheak sum of digits </label>
+</div>
+<div  class="custom-control custom-switch">
+  <input name="prime" type="checkbox" class="custom-control-input" id="customSwitch3">
+  <label class="custom-control-label" for="customSwitch3">Cheak its prime number or not</label>
+</div>
+<div  class="custom-control custom-switch">
+  <input name="prdt" type="checkbox" class="custom-control-input" id="customSwitch4">
+  <label class="custom-control-label" for="customSwitch4">Find product of digit </label>
+</div>
+
+  <button type="submit" class="btn btn-primary">Primary</button>
+</form>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
