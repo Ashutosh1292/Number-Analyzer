@@ -1,5 +1,5 @@
 """
-WSGI config for text_analyze project.
+WSGI config for Number_analyze project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'text_analyze.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Number_analyze.settings')
 
 application = get_wsgi_application()
