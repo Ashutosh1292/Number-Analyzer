@@ -10,6 +10,7 @@ def output(request):
     sm_dgt=request.GET.get("sum","off")
     ck_prime=request.GET.get("prime","off")
     product=request.GET.get("prdt","off")
+    rev=request.GET.get("reverse","off")
 
     if even=="on":
         prnt=""
@@ -46,6 +47,11 @@ def output(request):
         for i in range(0,len(num)):
             mul*=int(num[i])
         parameter={"function":"Find product of digit","result":mul}
+        return render(request,"output.html",parameter)
+    
+    elif rev=="on":
+        reverse=num[::-1]
+        parameter={"function":"Find reverse of number","result":reverse}
         return render(request,"output.html",parameter)
 
         
